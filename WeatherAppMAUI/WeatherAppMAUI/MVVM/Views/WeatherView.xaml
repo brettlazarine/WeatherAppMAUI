@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherAppMAUI.MVVM.Views.WeatherView"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             Title="WeatherView">
+
+    <Grid
+        Margin="15"
+        RowDefinitions=".08*, .1*, .5*, .1*, .3*">
+
+        <Grid
+            Grid.Row="0">
+            
+            <Frame />
+            <SearchBar
+                Placeholder="Search"
+                VerticalOptions="Center" />
+        </Grid>
+
+        <VerticalStackLayout
+            Grid.Row="1"
+            Style="{StaticResource MainStackLayout}">
+
+            <Label
+                Text="Paris" 
+                Style="{StaticResource Title}"/>
+            <Label
+                Text="July 08, 2050" />
+        </VerticalStackLayout>
+
+        <skia:SKLottieView
+            Grid.Row="2"
+            RepeatCount="-1"
+            Source="storm.json" />
+
+        <Grid
+            Grid.Row="3"
+            ColumnDefinitions="*, *, *">
+
+            <VerticalStackLayout
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                Spacing="10">
+
+                <Label
+                    Text="Temp" 
+                    Style="{StaticResource WeatherTitle}" />
+                <Label
+                    Text="25 C" 
+                    Style="{StaticResource WeatherValue}" /> 
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                Spacing="10">
+
+                <Label
+                    Text="Wind" 
+                    Style="{StaticResource WeatherTitle}" />
+                <Label
+                    Text="10 Km/H" 
+                    Style="{StaticResource WeatherValue}" />
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                Spacing="10">
+
+                <Label
+                    Text="Weather" 
+                    Style="{StaticResource WeatherTitle}" />
+                <Label
+                    Text="Sunny" 
+                    Style="{StaticResource WeatherValue}" />
+            </VerticalStackLayout>
+        </Grid>
+
+        <CollectionView
+            Grid.Row="4">
+
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout
+                    ItemSpacing="10"
+                    Orientation="Horizontal" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        Style="{StaticResource Card}">
+                        
+                        <VerticalStackLayout
+                            Spacing="5"
+                            VerticalOptions="Center">
+                            
+                            <skia:SKLottieView
+                                IsAnimationEnabled="False"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                Source="mist.json" />
+                            <Label
+                                Text="08-02-2050" 
+                                TextColor="{StaticResource Yellow100Accent}" />
+                            <Label
+                                Text="50 C" />
+                            <Label 
+                                Text="Sunny" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

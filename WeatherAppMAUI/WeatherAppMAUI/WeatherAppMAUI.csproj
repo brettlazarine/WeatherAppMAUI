@@ -49,7 +49,37 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\PTSerif-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Rubik-VariableFont_wght.ttf" />
+	  <None Remove="Resources\Raw\foggy.json" />
+	  <None Remove="Resources\Raw\mist.json" />
+	  <None Remove="Resources\Raw\partly-cloudy.json" />
+	  <None Remove="Resources\Raw\partly-shower.json" />
+	  <None Remove="Resources\Raw\snow-sunny.json" />
+	  <None Remove="Resources\Raw\snow.json" />
+	  <None Remove="Resources\Raw\storm.json" />
+	  <None Remove="Resources\Raw\stormshowersday.json" />
+	  <None Remove="Resources\Raw\sunny.json" />
+	  <None Remove="Resources\Raw\thunder.json" />
+	  <None Remove="Resources\Raw\windy.json" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.86" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="MVVM\Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVVM\Views\WeatherView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\AppStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

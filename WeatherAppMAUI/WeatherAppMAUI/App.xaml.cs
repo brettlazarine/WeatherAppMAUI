@@ -1,4 +1,6 @@
-﻿namespace WeatherAppMAUI;
+﻿using WeatherAppMAUI.MVVM.Views;
+
+namespace WeatherAppMAUI;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new WeatherView();
 	}
 }
