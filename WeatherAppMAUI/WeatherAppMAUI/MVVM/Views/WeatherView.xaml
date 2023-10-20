@@ -14,8 +14,11 @@
             
             <Frame />
             <SearchBar
+                x:Name="searchBar"
                 Placeholder="Search"
-                VerticalOptions="Center" />
+                VerticalOptions="Center" 
+                SearchCommand="{Binding SearchCommand}"
+                SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"/>
         </Grid>
 
         <VerticalStackLayout
