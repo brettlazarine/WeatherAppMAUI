@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Gy47xXfKARUs0YacPSHzfSKLijGf7dr0V6nCY5W3qAtnvE53NuN9ueFipxfA6vfvu+p989874O4b5YUtsf4mxw==",
+  "dgSpecHash": "w5bhz3qKThb8guUhc+sO2x2YLoSj56+jfPvjCruXf9mI4+8GIYgUU+iZ2DZBO5psmRS/CWs/BU0HzJt3wYAOlw==",
   "success": true,
   "projectFilePath": "C:\\Udemy\\MAUI\\WeatherAppMAUI\\WeatherAppMAUI\\WeatherAppMAUI\\WeatherAppMAUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jblaz\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -19,6 +20,7 @@
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.86\\microsoft.maui.graphics.win2d.winui.desktop.7.0.86.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\skiasharp.extended\\2.0.0-preview.86\\skiasharp.extended.2.0.0-preview.86.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\skiasharp.extended.ui.maui\\2.0.0-preview.86\\skiasharp.extended.ui.maui.2.0.0-preview.86.nupkg.sha512",

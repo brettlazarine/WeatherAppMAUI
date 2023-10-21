@@ -19,6 +19,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Extensions.Options.dll",
 		"Microsoft.Extensions.Primitives.dll",
 		"Microsoft.Maui.Graphics.dll",
+		"PropertyChanged.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Extended.dll",
 		"SkiaSharp.Extended.UI.dll",

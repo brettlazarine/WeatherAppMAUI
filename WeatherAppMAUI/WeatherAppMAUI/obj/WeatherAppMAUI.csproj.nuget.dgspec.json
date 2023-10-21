@@ -90,6 +90,10 @@
               "version": "[7.0.86, )",
               "autoReferenced": true
             },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "SkiaSharp.Extended.UI.Maui": {
               "target": "Package",
               "version": "[2.0.0-preview.86, )"
@@ -212,6 +216,10 @@
               "version": "[7.0.86, )",
               "autoReferenced": true
             },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "SkiaSharp.Extended.UI.Maui": {
               "target": "Package",
               "version": "[2.0.0-preview.86, )"
@@ -278,6 +286,10 @@
               "target": "Package",
               "version": "[7.0.86, )",
               "autoReferenced": true
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "SkiaSharp.Extended.UI.Maui": {
               "target": "Package",
@@ -362,6 +374,10 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "SkiaSharp.Extended.UI.Maui": {
               "target": "Package",
